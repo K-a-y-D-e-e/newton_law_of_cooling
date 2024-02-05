@@ -1,9 +1,11 @@
-#include "newton_hls.h"  // Include your header file
+#include <iostream>
+#include "newton_hls.h"
 
 // Top-level function declaration
 void newton_cooling_top(double temperature, double &result);
 
-// Main function (if applicable)
+#ifdef __SYNTHESIS__
+// This section will be included only during synthesis
 int main() {
     // Example usage of the top-level function
     double input_temperature = 100.0;  // Replace with your actual input
@@ -17,3 +19,4 @@ int main() {
 
     return 0;
 }
+#endif

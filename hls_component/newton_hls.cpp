@@ -1,10 +1,4 @@
-#include <cmath>
-#include "ap_fixed.h"
-
-#define DATA_WIDTH 32
-#define INTEGER_BITS 16
-
-typedef ap_fixed<DATA_WIDTH, INTEGER_BITS> fixed_point_t;
+#include "newton_hls.h"
 
 // Function to calculate the derivative (rate of change) in Newton's Law of Cooling
 void coolingDerivative(fixed_point_t& derivative, const fixed_point_t& temperature, const fixed_point_t& mediumTemperature, const fixed_point_t& coolingConstant) {
@@ -19,3 +13,5 @@ void solveCooling(fixed_point_t& temperature, const fixed_point_t& mediumTempera
     // Update temperature using Euler method
     temperature = temperature + derivative * timeStep;
 }
+
+// Optionally, you can add other utility functions related to Newton's Law of Cooling here

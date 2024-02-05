@@ -1,7 +1,7 @@
-#ifndef NEWTON_COOLING_HLS_H
-#define NEWTON_COOLING_HLS_H
+#ifndef NEWTON_HLS_H
+#define NEWTON_HLS_H
 
-#include "ap_fixed.h"
+#include <ap_fixed.h>
 
 #define DATA_WIDTH 32
 #define INTEGER_BITS 16
