@@ -1,0 +1,32 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "newton_hls.cpp",
+    "fileloc": 9,
+    "instructions": 32,
+    "loads": {
+      "L": 1
+    },
+    "name": "solveCooling",
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 867
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "newton_hls.cpp",
+    "fileloc": 4,
+    "instructions": 29,
+    "loads": {
+      "L": 1
+    },
+    "name": "coolingDerivative",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 456
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "newton_hls.cpp",
+    "fileloc": 9,
+    "instructions": 34,
+    "loads": {
+      "T": 4
+    },
+    "name": "solveCooling",
+    "stores": {
+      "T": 1
+    },
+    "total_instructions": 34
+  }
+}

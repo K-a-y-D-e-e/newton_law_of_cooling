@@ -3,12 +3,32 @@
 
 
 # Ignore object files and dependent files
-.o
-.d
+*.o
+*.d
+*.log
+*.rpt
+*.bd
+*.hwdef
+*.xdc
+*.bxml
+*.bda
+*.wpc
+*.wdf
+*.vhdl
+*.xml
+*.tcl
+*.zip
+*.png
+*.jou
+*.protoinst
+*.sh
+*.flow.log
+*.vhd
+*.dcp
+*.hwh
 
 #Ignore logs folder and log files
 /logs
-.log
 
 #Ignore lock files
 .lock
@@ -24,6 +44,12 @@ hls_component/hls_component/hls_component.hlscompile_summary
 hls_component/hls_component/hls_component.hlsrun_csim_summary
 hls_component/hls_component/hls/impl/misc/logo.png
 hls_component/hls_component/reports/
-hls_component/hls_component/hls/.autopilot/db/
 hls_component/hls_component/hls/.debug/
-hls_component/hls_component/hls/.autopilot/db/autopilot.flow.log
+hls_component/hls_component/hash-map.txt
+hls_component/hls_component/hls/impl/verilog/project.runs/impl_1/
+hls_component/hls_component/hls/impl/verilog/project.runs/synth_1/
+hls_component/hls_component/hls/impl/verilog/project.sim/sim_1/
+hls_component/hls_component/hls/impl/verilog/report/
+hls_component/hls_component/hls/sim/report/
+hls_component/hls_component/hls/sim/
+hls_component/hls_component/hls/impl/verilog/project.runs/
