@@ -1,13 +1,16 @@
 function [ ] = tp_fn_Newton(R,N,tMax,T0,Tenv, flagC)
 
-
-
+  % Ian Cooper
+  % School of Physics, University of Sydney, Sydney, NSW, Australia
+  % Email: ian.cooper@sydney.edu.au
+  
   % Web:   http://www.physics.usyd.edu.au/teach_res/mp/mphome.htm
   % R     Cooling constant [1/min]
   % N     Number of time steps 
   % tMax  Time interval for simulation  [minutes]
   % T0    Initial temperature of system [degC]
   % Tenv  Temperature of surrounding environment  [degc]
+
   % Demo: tp_fn_Newton(1.75, 0.1, 30, 78, 20, 1)
   % flagC == 1     % Plot numerical solution only for T vs t
   % flagC == 2     % Plot of numerical and analytical solutions for T vs t
