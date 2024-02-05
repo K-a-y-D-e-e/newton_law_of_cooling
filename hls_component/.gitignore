@@ -15,7 +15,3 @@
 
 .bin
 .pdi
-hls_component/hls_component/logs/
-hls_component/hls_component/hls/csim/build/
-hls_component/.cache/
-hls_component/hls_component/hls/csim/report/

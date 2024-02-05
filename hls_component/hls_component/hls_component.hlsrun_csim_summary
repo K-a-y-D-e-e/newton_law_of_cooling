@@ -1,0 +1,158 @@
+<ENTRY>
+{
+ "thisFile": "/home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls_component.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Feb  5 11:19:50 2024",
+ "timestampMillis": "1707112190430",
+ "buildStep": {
+  "cmdId": "de05d198-3cf8-4a56-89cf-a0d2d368a3e7",
+  "name": "vitis-run",
+  "logFile": "/home/netherquark/newton_law_of_cooling/hls_component/hls_component/logs/hls_component.steps.log",
+  "commandLine": "/home/netherquark/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "/home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/netherquark/newton_law_of_cooling/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Feb  5 11:19:50 2024",
+ "timestampMillis": "1707112190430",
+ "status": {
+  "cmdId": "de05d198-3cf8-4a56-89cf-a0d2d368a3e7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Feb  5 11:19:52 2024",
+ "timestampMillis": "1707112192180",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/netherquark/newton_law_of_cooling/newton_reference.cpp",
+     "/home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp",
+     "/home/netherquark/newton_law_of_cooling/hls_component/newton_hls_top.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2023.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Feb  5 11:19:52 2024",
+ "timestampMillis": "1707112192181",
+ "buildStep": {
+  "cmdId": "b3b61d7c-55fe-42b0-ab86-0d55b1ac7288",
+  "name": "csim_design",
+  "logFile": "/home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/netherquark/newton_law_of_cooling/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Feb  5 11:19:52 2024",
+ "timestampMillis": "1707112192181",
+ "status": {
+  "cmdId": "b3b61d7c-55fe-42b0-ab86-0d55b1ac7288",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Feb  5 11:19:52 2024",
+ "timestampMillis": "1707112192612",
+ "status": {
+  "cmdId": "b3b61d7c-55fe-42b0-ab86-0d55b1ac7288",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Feb  5 11:19:52 2024",
+ "timestampMillis": "1707112192653",
+ "status": {
+  "cmdId": "de05d198-3cf8-4a56-89cf-a0d2d368a3e7",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Feb  5 11:19:52 2024",
+ "timestampMillis": "1707112192653",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Feb  5 11:19:52 2024",
+ "timestampMillis": "1707112192654",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

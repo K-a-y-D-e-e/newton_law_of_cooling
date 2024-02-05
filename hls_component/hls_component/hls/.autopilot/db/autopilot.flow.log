@@ -1,0 +1,629 @@
+INFO-FLOW: Workspace /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls opened at Mon Feb 05 11:03:13 IST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8)
+Execute     add_files /home/netherquark/newton_law_of_cooling/newton_reference.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/newton_reference.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9)
+Execute     add_files /home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7)
+Execute     add_files -tb /home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xcvu9p-flga2104-2-i' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xcvu9p-flga2104-2-i' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1)
+Execute     set_part xcvu9p-flga2104-2-i 
+Execute       create_platform xcvu9p-flga2104-2-i -board  
+DBG:HLSDevice: Trying to load device library: /home/netherquark/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/netherquark/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+ERROR: [HLS 200-1023] Part 'xcvu9p-flga2104-2-i' is not installed.
+Command       create_platform done; error code: 1; 0.13 sec.
+INFO-FLOW: Caught error in set_part: command 'create_platform' returned error code
+    while executing
+"create_platform $value -board $board"
+    (procedure "ap_internal_set_part" line 26)
+    invoked from within
+"ap_internal_set_part "
+Command     set_part done; error code: 2; 0.14 sec.
+Execute     send_msg_by_id ERROR @200-1912@%s 'part=xcvu9p-flga2104-2-i' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1): command 'create_platform' returned error code 
+ERROR: [HLS 200-1912] Problem with ini entry 'part=xcvu9p-flga2104-2-i' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1): command 'create_platform' returned error code
+INFO-FLOW: Caught error in apply_ini: problem with 'part=xcvu9p-flga2104-2-i' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1): command 'create_platform' returned error code
+    while executing
+"error "problem with $errmsg""
+    (procedure "run_single_ini_cmd" line 28)
+    invoked from within
+"run_single_ini_cmd $cmd $ini $verbosity $origcwd $show_ini $hide_stack"
+    ("foreach" body line 3)
+    invoked from within
+"foreach cmdinfo $cmd_ini_list {
+            lassign $cmdinfo cmd ini
+            run_single_ini_cmd $cmd $ini $verbosity $origcwd $show_ini $hide_stac..."
+    (procedure "::HLS_INI::apply_inilist" line 20)
+    invoked from within
+"::HLS_INI::apply_inilist $inilist $apply_searchdirs $verbosity"
+    (procedure "ap_internal_apply_ini" line 52)
+    invoked from within
+"ap_internal_apply_ini "
+Command   apply_ini done; error code: 2; 0.15 sec.
+Execute   close_project 
+INFO: [HLS 200-1510] Running: close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls opened at Mon Feb 05 11:07:53 IST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8)
+Execute     add_files /home/netherquark/newton_law_of_cooling/newton_reference.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/newton_reference.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9)
+Execute     add_files /home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7)
+Execute     add_files -tb /home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1)
+Execute     set_part xc7a200tsbv484-1 
+Execute       create_platform xc7a200tsbv484-1 -board  
+DBG:HLSDevice: Trying to load device library: /home/netherquark/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/netherquark/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-sbv484-1'
+Command       create_platform done; 0.18 sec.
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7a200t-sbv484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.27 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.28 sec.
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline
+Execute   csim_design 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 4.25 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.89 seconds. CPU system time: 0.34 seconds. Elapsed time: 4.25 seconds; current allocated memory: 0.000 MB.
+Execute   close_project 
+INFO: [HLS 200-1510] Running: close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls opened at Mon Feb 05 11:09:07 IST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8)
+Execute     add_files /home/netherquark/newton_law_of_cooling/newton_reference.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/newton_reference.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9)
+Execute     add_files /home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7)
+Execute     add_files -tb /home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1)
+Execute     set_part xc7a200tsbv484-1 
+Execute       create_platform xc7a200tsbv484-1 -board  
+DBG:HLSDevice: Trying to load device library: /home/netherquark/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/netherquark/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-sbv484-1'
+Command       create_platform done; 0.17 sec.
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7a200t-sbv484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.24 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.26 sec.
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline
+Execute   csim_design 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 2.58 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2.39 seconds. CPU system time: 0.19 seconds. Elapsed time: 2.58 seconds; current allocated memory: 0.000 MB.
+Execute   close_project 
+INFO: [HLS 200-1510] Running: close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls opened at Mon Feb 05 11:09:29 IST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8)
+Execute     add_files /home/netherquark/newton_law_of_cooling/newton_reference.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/newton_reference.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9)
+Execute     add_files /home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7)
+Execute     add_files -tb /home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1)
+Execute     set_part xc7a200tsbv484-1 
+Execute       create_platform xc7a200tsbv484-1 -board  
+DBG:HLSDevice: Trying to load device library: /home/netherquark/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/netherquark/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-sbv484-1'
+Command       create_platform done; 0.18 sec.
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7a200t-sbv484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.24 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.26 sec.
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline
+Execute   csim_design 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 0.44 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.37 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.44 seconds; current allocated memory: 0.000 MB.
+Execute   close_project 
+INFO: [HLS 200-1510] Running: close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls opened at Mon Feb 05 11:10:40 IST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8)
+Execute     add_files /home/netherquark/newton_law_of_cooling/newton_reference.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/newton_reference.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9)
+Execute     add_files /home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7)
+Execute     add_files -tb /home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1)
+Execute     set_part xc7a200tsbv484-1 
+Execute       create_platform xc7a200tsbv484-1 -board  
+DBG:HLSDevice: Trying to load device library: /home/netherquark/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/netherquark/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-sbv484-1'
+Command       create_platform done; 0.2 sec.
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7a200t-sbv484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.27 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.28 sec.
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline
+Execute   csim_design 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info 
+Execute     source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 0.23 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.15 seconds. CPU system time: 0.08 seconds. Elapsed time: 0.23 seconds; current allocated memory: 0.000 MB.
+Execute   close_project 
+INFO: [HLS 200-1510] Running: close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls opened at Mon Feb 05 11:19:09 IST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8)
+Execute     add_files /home/netherquark/newton_law_of_cooling/newton_reference.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/newton_reference.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9)
+Execute     add_files /home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=newton_hls_top.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=newton_hls_top.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(10)
+Execute     add_files /home/netherquark/newton_law_of_cooling/hls_component/newton_hls_top.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/hls_component/newton_hls_top.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7)
+Execute     add_files -tb /home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1)
+Execute     set_part xc7a200tsbv484-1 
+Execute       create_platform xc7a200tsbv484-1 -board  
+DBG:HLSDevice: Trying to load device library: /home/netherquark/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/netherquark/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-sbv484-1'
+Command       create_platform done; 0.26 sec.
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7a200t-sbv484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.34 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.36 sec.
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline
+Execute   csim_design 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 1.54 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.37 seconds. CPU system time: 0.16 seconds. Elapsed time: 1.54 seconds; current allocated memory: 0.000 MB.
+Execute   close_project 
+INFO: [HLS 200-1510] Running: close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls opened at Mon Feb 05 11:19:28 IST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8)
+Execute     add_files /home/netherquark/newton_law_of_cooling/newton_reference.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/newton_reference.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9)
+Execute     add_files /home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=newton_hls_top.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=newton_hls_top.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(10)
+Execute     add_files /home/netherquark/newton_law_of_cooling/hls_component/newton_hls_top.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/hls_component/newton_hls_top.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7)
+Execute     add_files -tb /home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1)
+Execute     set_part xc7a200tsbv484-1 
+Execute       create_platform xc7a200tsbv484-1 -board  
+DBG:HLSDevice: Trying to load device library: /home/netherquark/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/netherquark/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-sbv484-1'
+Command       create_platform done; 0.17 sec.
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7a200t-sbv484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.24 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.25 sec.
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline
+Execute   csim_design 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 0.46 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.4 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.46 seconds; current allocated memory: 0.000 MB.
+Execute   close_project 
+INFO: [HLS 200-1510] Running: close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls opened at Mon Feb 05 11:19:51 IST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/netherquark/newton_law_of_cooling/newton_reference.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(8)
+Execute     add_files /home/netherquark/newton_law_of_cooling/newton_reference.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/newton_reference.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=newton_hls.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(9)
+Execute     add_files /home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=newton_hls_top.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=newton_hls_top.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(10)
+Execute     add_files /home/netherquark/newton_law_of_cooling/hls_component/newton_hls_top.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/newton_law_of_cooling/hls_component/newton_hls_top.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=testbench.cpp' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(7)
+Execute     add_files -tb /home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/netherquark/newton_law_of_cooling/hls_component/testbench.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7a200tsbv484-1' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(1)
+Execute     set_part xc7a200tsbv484-1 
+Execute       create_platform xc7a200tsbv484-1 -board  
+DBG:HLSDevice: Trying to load device library: /home/netherquark/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/netherquark/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-sbv484-1'
+Command       create_platform done; 0.15 sec.
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7a200t-sbv484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.22 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at /home/netherquark/newton_law_of_cooling/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.23 sec.
+Execute   apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline
+Execute   csim_design 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info 
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO-FLOW: AESL_CSIM::csim_cmd_wrap errorInfo:
+4
+    while executing
+"::AESL_CSIM::csim_cmd_wrap $args"
+INFO-FLOW: Caught error in csim_design: 4
+    while executing
+"ap_internal_csim_design "
+Command   csim_design done; error code: 2; 0.43 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0.37 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.43 seconds; current allocated memory: 0.000 MB.
+Execute   close_project 
+INFO: [HLS 200-1510] Running: close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

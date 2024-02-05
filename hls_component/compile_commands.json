@@ -1,0 +1,44 @@
+[
+  {
+    "directory": "/home/netherquark/newton_law_of_cooling/hls_component",
+    "arguments": [
+      "/home/netherquark/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/bin/g++",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/include",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/include/etc",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/include/ap_sysc",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/lnx64/tools/auto_cc/include",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/lnx64/tools/systemc/include",
+      "--compile",
+      "/home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp"
+    ],
+    "file": "/home/netherquark/newton_law_of_cooling/hls_component/newton_hls.cpp"
+  },
+  {
+    "directory": "/home/netherquark/newton_law_of_cooling/hls_component",
+    "arguments": [
+      "/home/netherquark/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/bin/g++",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/include",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/include/etc",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/include/ap_sysc",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/lnx64/tools/auto_cc/include",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/lnx64/tools/systemc/include",
+      "--compile",
+      "/home/netherquark/newton_law_of_cooling/newton_reference.cpp"
+    ],
+    "file": "/home/netherquark/newton_law_of_cooling/newton_reference.cpp"
+  },
+  {
+    "directory": "/home/netherquark/newton_law_of_cooling/hls_component",
+    "arguments": [
+      "/home/netherquark/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/bin/g++",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/include",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/include/etc",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/include/ap_sysc",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/lnx64/tools/auto_cc/include",
+      "-isystem/home/netherquark/Xilinx/Vitis_HLS/2023.2/lnx64/tools/systemc/include",
+      "--compile",
+      "/home/netherquark/newton_law_of_cooling/hls_component/newton_hls_top.cpp"
+    ],
+    "file": "/home/netherquark/newton_law_of_cooling/hls_component/newton_hls_top.cpp"
+  }
+]
