@@ -78,8 +78,6 @@ module tb_bd_0_wrapper;
         // Test iterations
         repeat (NUM_TEST_ITERS) begin
             #10;
-            // Display current time and temperature
-            $display("Time: %d \tTemperature: %d", $time, temperature_o);
             // Capture output temperature for the next iteration
             temperature_i = temperature_o;
         end

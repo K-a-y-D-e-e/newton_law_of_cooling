@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,206.001 ns"></ZoomEndTime>
+      <ZoomEndTime time="1,567.544 ns"></ZoomEndTime>
       <Cursor1Time time="1,000.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="276"></NameColumnWidth>
-      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="17" />
    <wvobject type="logic" fp_name="/tb_bd_0_wrapper/ap_clk">
       <obj_property name="ElementShortName">ap_clk</obj_property>
       <obj_property name="ObjectShortName">ap_clk</obj_property>
@@ -87,5 +87,13 @@
       <obj_property name="ElementShortName">MAX_ITER_IDX[31:0]</obj_property>
       <obj_property name="ObjectShortName">MAX_ITER_IDX[31:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_bd_0_wrapper/uut/bd_0_i/hls_inst/inst/ap_rst">
+      <obj_property name="ElementShortName">ap_rst</obj_property>
+      <obj_property name="ObjectShortName">ap_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_bd_0_wrapper/uut/bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
 </wave_config>
