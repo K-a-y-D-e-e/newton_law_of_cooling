@@ -1034,3 +1034,274 @@ INFO: [HLS 200-1510] Running: close_project
 Execute     close_solution 
 Execute       cleanup_all 
 Execute       cleanup_all 
+INFO-FLOW: Workspace /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls opened at Tue Feb 06 14:55:03 IST 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=newton_hls.cpp' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=newton_hls.cpp' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(8)
+Execute     add_files /home/netherquark/attempt2/newton_law_of_cooling/hls_component/newton_hls.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/attempt2/newton_law_of_cooling/hls_component/newton_hls.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=newton_hls_top.cpp' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=newton_hls_top.cpp' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(9)
+Execute     add_files /home/netherquark/attempt2/newton_law_of_cooling/hls_component/newton_hls_top.cpp 
+INFO: [HLS 200-10] Adding design file '/home/netherquark/attempt2/newton_law_of_cooling/hls_component/newton_hls_top.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=testbench.cpp' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=testbench.cpp' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(7)
+Execute     add_files -tb /home/netherquark/attempt2/newton_law_of_cooling/hls_component/testbench.cpp 
+INFO: [HLS 200-10] Adding test bench file '/home/netherquark/attempt2/newton_law_of_cooling/hls_component/testbench.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=solveCooling' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=solveCooling' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(10)
+Execute     set_top solveCooling 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7a200tsbv484-1' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7a200tsbv484-1' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(1)
+Execute     set_part xc7a200tsbv484-1 
+Execute       create_platform xc7a200tsbv484-1 -board  
+DBG:HLSDevice: Trying to load device library: /home/netherquark/Xilinx/Vitis_HLS/2023.2/lib/lnx64.o/libxv_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /home/netherquark/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a200t-sbv484-1'
+Command       create_platform done; 0.25 sec.
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7a200t-sbv484-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.36 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' at /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.37 sec.
+Execute   apply_ini /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1510] Running: apply_ini /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+Execute     send_msg_by_id INFO @200-1909@%s /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/config.cmdline
+Execute   export_design -flow impl 
+INFO: [HLS 200-1510] Running: export_design -flow impl 
+Execute     config_export -flow=impl 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -flow impl -format ip_catalog -rtl verilog
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name artix7 -data parts 
+Execute     ap_part_info -name xc7a12ticsg325-1L -data info 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=solveCooling xml_exists=1
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.rtl_wrap.cfg.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.rtl_wrap.cfg.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.rtl_wrap.cfg.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to solveCooling
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=4
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=3 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='solveCooling_mul_32s_32s_48_2_1
+solveCooling_mul_33s_32s_48_2_1
+solveCooling
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/top-io-be.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.rtl_wrap.cfg.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.compgen.dataonly.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data names -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info -quiet 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.constraint.tcl 
+Execute     sc_get_clocks solveCooling 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to solveCooling
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data names -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data names -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info -quiet 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=solveCooling
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.rtl_wrap.cfg.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.rtl_wrap.cfg.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.rtl_wrap.cfg.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data names -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data names -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info -quiet 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data names -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info -quiet 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data names -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info -quiet 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.constraint.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data names -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name artix7 -data parts 
+Execute     ap_part_info -name xc7a12ticsg325-1L -data info 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:   auto_impl: eval: -flow impl -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-flow impl -rtl verilog'
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+INFO-FLOW: DBG:PUTS: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name artix7 -data parts 
+Execute     ap_part_info -name xc7a12ticsg325-1L -data info 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data names -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info -quiet 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data names -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info -quiet 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.constraint.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/solveCooling.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data names -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_family_info -name artix7 -data parts 
+Execute     ap_part_info -name xc7a12ticsg325-1L -data info 
+Execute     source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /home/netherquark/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/autopilot.rtl.models.tcl 
+Execute     source /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data names -quiet 
+Execute     ap_part_info -name xc7a200t-sbv484-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: debug_in_auto_impl: vlog exec /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/verilog/impl.sh
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report topinfo_dict='RtlTopPrefix {} RtlSubPrefix solveCooling_ TopModuleNoPrefix solveCooling TopModuleWithPrefix solveCooling' export_design_flow='impl' impl_dir='/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl' lang='verilog' out_dir=''
+INFO-FLOW: DBG:PUTS:     auto_impl_report: impl processing xml
+Execute     ap_part_info -quiet -data family -name xc7a200t-sbv484-1 
+INFO-FLOW: DBG:PUTS:     writing export xml file: /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/report/verilog/export_impl.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode0x7ff55776b6e8' export_design_flow='impl' export_rpt='/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/report/verilog/export_impl.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_impl.rpt
+INFO-FLOW: DBG:PUTS:     auto_impl_report: syn processing xml
+Execute     ap_part_info -quiet -data family -name xc7a200t-sbv484-1 
+INFO-FLOW: DBG:PUTS:     writing export xml file: /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/report/verilog/export_syn.xml
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::auto_impl_report_txt xml_root='domNode0x7ff55647ce18' export_design_flow='syn' export_rpt='/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/report/verilog/export_syn.rpt' rpt_txt_var=''
+INFO-FLOW: DBG:PUTS:     wrote export rpt file: export_syn.rpt
+Execute     send_msg_by_id INFO @200-802@%s hls_component/solveCooling.zip 
+INFO: [HLS 200-802] Generated output file hls_component/solveCooling.zip
+Command   export_design done; 207.16 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 101.38 seconds. CPU system time: 5.37 seconds. Elapsed time: 207.16 seconds; current allocated memory: 0.000 MB.
+Execute   close_project 
+INFO: [HLS 200-1510] Running: close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

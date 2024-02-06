@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2.1 (lin64) Build 4081461 Thu Dec 14 12:22:04 MST 2023
-// Date        : Mon Feb  5 14:09:50 2024
+// Date        : Tue Feb  6 14:56:10 2024
 // Host        : localhost.localdomain running 64-bit unknown
 // Command     : write_verilog -force -mode funcsim
 //               /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0_sim_netlist.v

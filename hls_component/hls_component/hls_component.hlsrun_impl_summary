@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Mon Feb  5 14:08:47 2024",
- "timestampMillis": "1707122327827",
+ "dateTimestamp": "Tue Feb  6 14:55:01 2024",
+ "timestampMillis": "1707211501635",
  "buildStep": {
-  "cmdId": "676d2080-c525-4082-99c2-80cf1831d46e",
+  "cmdId": "74ea0bf9-1926-4a9c-9df8-51324e4eb6b4",
   "name": "vitis-run",
   "logFile": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/logs/hls_component.steps.log",
   "commandLine": "/home/netherquark/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --impl --config /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg --work_dir hls_component ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Feb  5 14:08:47 2024",
- "timestampMillis": "1707122327828",
+ "dateTimestamp": "Tue Feb  6 14:55:01 2024",
+ "timestampMillis": "1707211501635",
  "status": {
-  "cmdId": "676d2080-c525-4082-99c2-80cf1831d46e",
+  "cmdId": "74ea0bf9-1926-4a9c-9df8-51324e4eb6b4",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Mon Feb  5 14:08:49 2024",
- "timestampMillis": "1707122329505",
+ "dateTimestamp": "Tue Feb  6 14:55:03 2024",
+ "timestampMillis": "1707211503832",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -81,10 +81,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Mon Feb  5 14:08:49 2024",
- "timestampMillis": "1707122329506",
+ "dateTimestamp": "Tue Feb  6 14:55:03 2024",
+ "timestampMillis": "1707211503833",
  "buildStep": {
-  "cmdId": "b6a2f1e8-e310-4081-a80b-4096c2bb9877",
+  "cmdId": "13187408-4ebd-45ec-898b-3140e51b0ab2",
   "name": "export_design",
   "logFile": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/hls.log",
   "commandLine": "export_design -flow impl",
@@ -100,10 +100,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Feb  5 14:08:49 2024",
- "timestampMillis": "1707122329507",
+ "dateTimestamp": "Tue Feb  6 14:55:03 2024",
+ "timestampMillis": "1707211503833",
  "status": {
-  "cmdId": "b6a2f1e8-e310-4081-a80b-4096c2bb9877",
+  "cmdId": "13187408-4ebd-45ec-898b-3140e51b0ab2",
   "state": "CS_RUNNING"
  }
 }
@@ -111,8 +111,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Feb  5 14:08:49 2024",
- "timestampMillis": "1707122329507",
+ "dateTimestamp": "Tue Feb  6 14:55:03 2024",
+ "timestampMillis": "1707211503834",
  "report": {
   "path": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/verilog",
   "name": "",
@@ -125,8 +125,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Feb  5 14:08:49 2024",
- "timestampMillis": "1707122329507",
+ "dateTimestamp": "Tue Feb  6 14:55:03 2024",
+ "timestampMillis": "1707211503834",
  "report": {
   "path": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/report/verilog/export_syn.rpt",
   "name": "",
@@ -139,8 +139,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Feb  5 14:08:49 2024",
- "timestampMillis": "1707122329507",
+ "dateTimestamp": "Tue Feb  6 14:55:03 2024",
+ "timestampMillis": "1707211503834",
  "report": {
   "path": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/report/verilog/export_syn.xml",
   "name": "",
@@ -153,8 +153,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Feb  5 14:08:49 2024",
- "timestampMillis": "1707122329508",
+ "dateTimestamp": "Tue Feb  6 14:55:03 2024",
+ "timestampMillis": "1707211503834",
  "report": {
   "path": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/verilog",
   "name": "",
@@ -167,8 +167,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Feb  5 14:08:49 2024",
- "timestampMillis": "1707122329508",
+ "dateTimestamp": "Tue Feb  6 14:55:03 2024",
+ "timestampMillis": "1707211503835",
  "report": {
   "path": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/report/verilog/export_impl.rpt",
   "name": "",
@@ -181,8 +181,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Feb  5 14:08:49 2024",
- "timestampMillis": "1707122329508",
+ "dateTimestamp": "Tue Feb  6 14:55:03 2024",
+ "timestampMillis": "1707211503835",
  "report": {
   "path": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/impl/report/verilog/export_impl.xml",
   "name": "",
@@ -195,8 +195,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Feb  5 14:12:13 2024",
- "timestampMillis": "1707122533852",
+ "dateTimestamp": "Tue Feb  6 14:58:30 2024",
+ "timestampMillis": "1707211710993",
  "report": {
   "path": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls",
   "name": "",
@@ -209,8 +209,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Feb  5 14:12:13 2024",
- "timestampMillis": "1707122533860",
+ "dateTimestamp": "Tue Feb  6 14:58:30 2024",
+ "timestampMillis": "1707211710994",
  "report": {
   "path": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls",
   "name": "",
@@ -223,10 +223,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Feb  5 14:12:13 2024",
- "timestampMillis": "1707122533861",
+ "dateTimestamp": "Tue Feb  6 14:58:30 2024",
+ "timestampMillis": "1707211710995",
  "status": {
-  "cmdId": "b6a2f1e8-e310-4081-a80b-4096c2bb9877",
+  "cmdId": "13187408-4ebd-45ec-898b-3140e51b0ab2",
   "state": "CS_PASSED"
  }
 }
@@ -234,10 +234,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Feb  5 14:12:14 2024",
- "timestampMillis": "1707122534132",
+ "dateTimestamp": "Tue Feb  6 14:58:31 2024",
+ "timestampMillis": "1707211711047",
  "status": {
-  "cmdId": "676d2080-c525-4082-99c2-80cf1831d46e",
+  "cmdId": "74ea0bf9-1926-4a9c-9df8-51324e4eb6b4",
   "state": "CS_PASSED"
  }
 }
@@ -245,8 +245,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Feb  5 14:12:14 2024",
- "timestampMillis": "1707122534137",
+ "dateTimestamp": "Tue Feb  6 14:58:31 2024",
+ "timestampMillis": "1707211711049",
  "report": {
   "path": "",
   "name": "",
@@ -259,8 +259,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Feb  5 14:12:14 2024",
- "timestampMillis": "1707122534140",
+ "dateTimestamp": "Tue Feb  6 14:58:31 2024",
+ "timestampMillis": "1707211711049",
  "report": {
   "path": "",
   "name": "",
