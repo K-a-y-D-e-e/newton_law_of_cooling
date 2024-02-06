@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_bd_0_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_bd_0_wrapper" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,206.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject type="logic" fp_name="/tb_bd_0_wrapper/ap_clk">
+      <obj_property name="ElementShortName">ap_clk</obj_property>
+      <obj_property name="ObjectShortName">ap_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_bd_0_wrapper/ap_ctrl_start">
+      <obj_property name="ElementShortName">ap_ctrl_start</obj_property>
+      <obj_property name="ObjectShortName">ap_ctrl_start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_bd_0_wrapper/ap_rst">
+      <obj_property name="ElementShortName">ap_rst</obj_property>
+      <obj_property name="ObjectShortName">ap_rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_bd_0_wrapper/coolingConstant">
+      <obj_property name="ElementShortName">coolingConstant[31:0]</obj_property>
+      <obj_property name="ObjectShortName">coolingConstant[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_bd_0_wrapper/mediumTemperature">
+      <obj_property name="ElementShortName">mediumTemperature[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mediumTemperature[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_bd_0_wrapper/temperature_i">
+      <obj_property name="ElementShortName">temperature_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temperature_i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_bd_0_wrapper/timeStep">
+      <obj_property name="ElementShortName">timeStep[31:0]</obj_property>
+      <obj_property name="ObjectShortName">timeStep[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_bd_0_wrapper/ap_ctrl_done">
+      <obj_property name="ElementShortName">ap_ctrl_done</obj_property>
+      <obj_property name="ObjectShortName">ap_ctrl_done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_bd_0_wrapper/ap_ctrl_idle">
+      <obj_property name="ElementShortName">ap_ctrl_idle</obj_property>
+      <obj_property name="ObjectShortName">ap_ctrl_idle</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_bd_0_wrapper/ap_ctrl_ready">
+      <obj_property name="ElementShortName">ap_ctrl_ready</obj_property>
+      <obj_property name="ObjectShortName">ap_ctrl_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_bd_0_wrapper/temperature_o">
+      <obj_property name="ElementShortName">temperature_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temperature_o[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_bd_0_wrapper/temperature_o_ap_vld">
+      <obj_property name="ElementShortName">temperature_o_ap_vld</obj_property>
+      <obj_property name="ObjectShortName">temperature_o_ap_vld</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_bd_0_wrapper/NUM_TEST_ITERS">
+      <obj_property name="ElementShortName">NUM_TEST_ITERS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_TEST_ITERS[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_bd_0_wrapper/MIN_ITER_IDX">
+      <obj_property name="ElementShortName">MIN_ITER_IDX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MIN_ITER_IDX[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_bd_0_wrapper/MAX_ITER_IDX">
+      <obj_property name="ElementShortName">MAX_ITER_IDX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAX_ITER_IDX[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
