@@ -1,0 +1,31 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-377,-109",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port ap_ctrl -pg 1 -lvl 0 -x -20 -y 50 -defaultsOSRD
+preplace port port-id_ap_clk -pg 1 -lvl 0 -x -20 -y 70 -defaultsOSRD
+preplace port port-id_ap_rst -pg 1 -lvl 0 -x -20 -y 90 -defaultsOSRD
+preplace port port-id_temperature_o_ap_vld -pg 1 -lvl 2 -x 480 -y 100 -defaultsOSRD
+preplace portBus coolingConstant -pg 1 -lvl 0 -x -20 -y 150 -defaultsOSRD
+preplace portBus mediumTemperature -pg 1 -lvl 0 -x -20 -y 130 -defaultsOSRD
+preplace portBus temperature_i -pg 1 -lvl 0 -x -20 -y 110 -defaultsOSRD
+preplace portBus temperature_o -pg 1 -lvl 2 -x 480 -y 120 -defaultsOSRD
+preplace portBus timeStep -pg 1 -lvl 0 -x -20 -y 170 -defaultsOSRD
+preplace inst hls_inst -pg 1 -lvl 1 -x 230 -y 110 -defaultsOSRD
+preplace netloc ap_clk_0_1 1 0 1 NJ 70
+preplace netloc ap_rst_0_1 1 0 1 NJ 90
+preplace netloc coolingConstant_0_1 1 0 1 NJ 150
+preplace netloc hls_inst_temperature_o 1 1 1 NJ 120
+preplace netloc hls_inst_temperature_o_ap_vld 1 1 1 NJ 100
+preplace netloc mediumTemperature_0_1 1 0 1 NJ 130
+preplace netloc temperature_i_0_1 1 0 1 NJ 110
+preplace netloc timeStep_0_1 1 0 1 NJ 170
+preplace netloc ap_ctrl_0_1 1 0 1 NJ 50
+levelinfo -pg 1 -20 230 480
+pagesize -pg 1 -db -bbox -sgen -270 -10 690 230
+"
+}
+0

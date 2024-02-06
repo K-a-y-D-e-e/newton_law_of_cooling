@@ -23,7 +23,7 @@
 module tb_bd_0_wrapper;
 
     // Parameters
-    localparam NUM_TEST_ITERS = 100;
+    localparam NUM_TEST_ITERS = 1000;
     localparam MIN_ITER_IDX = 0;
     localparam MAX_ITER_IDX = MIN_ITER_IDX + NUM_TEST_ITERS;
     
