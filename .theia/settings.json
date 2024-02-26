@@ -1,9 +1,9 @@
 {
     "clangd.fallbackFlags": [
-        "-I/home/netherquark/Xilinx/Vitis_HLS/2023.2/include",
-        "-I/home/netherquark/Xilinx/Vitis_HLS/2023.2/include/etc",
-        "-I/home/netherquark/Xilinx/Vitis_HLS/2023.2/include/ap_sysc",
-        "-I/home/netherquark/Xilinx/Vitis_HLS/2023.2/lnx64/tools/auto_cc/include",
-        "-I/home/netherquark/Xilinx/Vitis_HLS/2023.2/lnx64/tools/systemc/include"
+        "-I/home/soham/Xilinx/Vitis_HLS/2023.2/include",
+        "-I/home/soham/Xilinx/Vitis_HLS/2023.2/include/etc",
+        "-I/home/soham/Xilinx/Vitis_HLS/2023.2/include/ap_sysc",
+        "-I/home/soham/Xilinx/Vitis_HLS/2023.2/lnx64/tools/auto_cc/include",
+        "-I/home/soham/Xilinx/Vitis_HLS/2023.2/lnx64/tools/systemc/include"
     ]
 }

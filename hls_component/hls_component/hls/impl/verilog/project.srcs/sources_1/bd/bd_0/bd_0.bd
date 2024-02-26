@@ -1,0 +1,216 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x62EF3561A67A29D8",
+      "device": "xc7a200tsbv484-1",
+      "gen_directory": "../../../../project.gen/sources_1/bd/bd_0",
+      "name": "bd_0",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "hls_inst": ""
+    },
+    "interface_ports": {
+      "ap_ctrl": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:acc_handshake:1.0",
+        "vlnv": "xilinx.com:interface:acc_handshake_rtl:1.0",
+        "port_maps": {
+          "start": {
+            "physical_name": "ap_ctrl_start",
+            "direction": "I"
+          },
+          "done": {
+            "physical_name": "ap_ctrl_done",
+            "direction": "O"
+          },
+          "idle": {
+            "physical_name": "ap_ctrl_idle",
+            "direction": "O"
+          },
+          "ready": {
+            "physical_name": "ap_ctrl_ready",
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "ports": {
+      "ap_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "ap_rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "bd_0_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000.0"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "coolingConstant": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "mediumTemperature": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "temperature_i": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "temperature_o": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "temperature_o_ap_vld": {
+        "direction": "O"
+      },
+      "timeStep": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "hls_inst": {
+        "vlnv": "xilinx.com:hls:solveCooling:1.0",
+        "ip_revision": "2113445495",
+        "xci_name": "bd_0_hls_inst_0",
+        "xci_path": "ip/bd_0_hls_inst_0/bd_0_hls_inst_0.xci",
+        "inst_hier_path": "hls_inst"
+      }
+    },
+    "interface_nets": {
+      "ap_ctrl_0_1": {
+        "interface_ports": [
+          "ap_ctrl",
+          "hls_inst/ap_ctrl"
+        ]
+      }
+    },
+    "nets": {
+      "ap_clk_0_1": {
+        "ports": [
+          "ap_clk",
+          "hls_inst/ap_clk"
+        ]
+      },
+      "ap_rst_0_1": {
+        "ports": [
+          "ap_rst",
+          "hls_inst/ap_rst"
+        ]
+      },
+      "coolingConstant_0_1": {
+        "ports": [
+          "coolingConstant",
+          "hls_inst/coolingConstant"
+        ]
+      },
+      "hls_inst_temperature_o": {
+        "ports": [
+          "hls_inst/temperature_o",
+          "temperature_o"
+        ]
+      },
+      "hls_inst_temperature_o_ap_vld": {
+        "ports": [
+          "hls_inst/temperature_o_ap_vld",
+          "temperature_o_ap_vld"
+        ]
+      },
+      "mediumTemperature_0_1": {
+        "ports": [
+          "mediumTemperature",
+          "hls_inst/mediumTemperature"
+        ]
+      },
+      "temperature_i_0_1": {
+        "ports": [
+          "temperature_i",
+          "hls_inst/temperature_i"
+        ]
+      },
+      "timeStep_0_1": {
+        "ports": [
+          "timeStep",
+          "hls_inst/timeStep"
+        ]
+      }
+    }
+  }
+}

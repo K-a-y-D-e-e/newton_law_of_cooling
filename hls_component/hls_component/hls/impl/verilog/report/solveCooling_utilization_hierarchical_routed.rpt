@@ -1,0 +1,35 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2.2 (lin64) Build 4126759 Thu Feb  8 23:52:05 MST 2024
+| Date         : Mon Feb 26 21:37:39 2024
+| Host         : csa running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/solveCooling_utilization_hierarchical_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7a200tsbv484-1
+| Speed File   : -1
+| Design State : Physopt postRoute
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------------------+-------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|            Instance           |                      Module                     | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------------------+-------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| bd_0_wrapper                  |                                           (top) |        176 |        176 |       0 |    0 | 173 |      0 |      0 |          8 |
+|   bd_0_i                      |                                            bd_0 |        176 |        176 |       0 |    0 | 173 |      0 |      0 |          8 |
+|     hls_inst                  |                                 bd_0_hls_inst_0 |        176 |        176 |       0 |    0 | 173 |      0 |      0 |          8 |
+|       inst                    |                    bd_0_hls_inst_0_solveCooling |        176 |        176 |       0 |    0 | 173 |      0 |      0 |          8 |
+|         (inst)                |                    bd_0_hls_inst_0_solveCooling |         35 |         35 |       0 |    0 | 120 |      0 |      0 |          0 |
+|         mul_32s_32s_48_2_1_U1 | bd_0_hls_inst_0_solveCooling_mul_32s_32s_48_2_1 |         78 |         78 |       0 |    0 |  19 |      0 |      0 |          4 |
+|         mul_33s_32s_48_2_1_U2 | bd_0_hls_inst_0_solveCooling_mul_33s_32s_48_2_1 |         63 |         63 |       0 |    0 |  34 |      0 |      0 |          4 |
++-------------------------------+-------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

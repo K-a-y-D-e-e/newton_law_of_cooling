@@ -1,0 +1,117 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2023.2.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>10.000</TargetClockPeriod>
+    <AchievedClockPeriod>5.745</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>5.745</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>5.745</CP_SYNTH>
+    <CP_TARGET>10.000</CP_TARGET>
+    <SLACK_FINAL>4.255</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>4.255</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>4.255</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>4.255</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>0</BRAM>
+      <CLB>0</CLB>
+      <DSP>8</DSP>
+      <FF>173</FF>
+      <LATCH>0</LATCH>
+      <LUT>176</LUT>
+      <SRL>0</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>730</BRAM>
+      <CLB>0</CLB>
+      <DSP>740</DSP>
+      <FF>269200</FF>
+      <LUT>134600</LUT>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="solveCooling" DISPNAME="inst" RTLNAME="solveCooling">
+      <SubModules count="2">mul_32s_32s_48_2_1_U1 mul_33s_32s_48_2_1_U2</SubModules>
+      <Resources DSP="8" FF="173" LUT="176"/>
+      <LocalResources FF="120" LUT="35"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_32s_32s_48_2_1_U1" BINDMODULE="solveCooling_mul_32s_32s_48_2_1" DEPTH="1" TYPE="resource" MODULENAME="mul_32s_32s_48_2_1" DISPNAME="mul_32s_32s_48_2_1_U1" RTLNAME="solveCooling_mul_32s_32s_48_2_1">
+      <Resources DSP="4" FF="19" LUT="78"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_48_2_1_U1" SOURCE="/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp:14" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln14"/>
+    </RtlModule>
+    <RtlModule CELL="inst/mul_33s_32s_48_2_1_U2" BINDMODULE="solveCooling_mul_33s_32s_48_2_1" DEPTH="1" TYPE="resource" MODULENAME="mul_33s_32s_48_2_1" DISPNAME="mul_33s_32s_48_2_1_U2" RTLNAME="solveCooling_mul_33s_32s_48_2_1">
+      <Resources DSP="4" FF="34" LUT="63"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_33s_32s_48_2_1_U2" SOURCE="/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp:5" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln5"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="4.261" DATAPATH_LOGIC_DELAY="4.206" DATAPATH_NET_DELAY="0.055" ENDPOINT_PIN="mul_32s_32s_48_2_1_U1/buff0_reg__0/PCIN[0]" LOGIC_LEVELS="0" MAX_FANOUT="1" SLACK="4.255" STARTPOINT_PIN="mul_32s_32s_48_2_1_U1/tmp_product__0/CLK">
+      <CELL NAME="mul_32s_32s_48_2_1_U1/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+      <CELL NAME="mul_32s_32s_48_2_1_U1/buff0_reg__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.261" DATAPATH_LOGIC_DELAY="4.206" DATAPATH_NET_DELAY="0.055" ENDPOINT_PIN="mul_32s_32s_48_2_1_U1/buff0_reg__0/PCIN[10]" LOGIC_LEVELS="0" MAX_FANOUT="1" SLACK="4.255" STARTPOINT_PIN="mul_32s_32s_48_2_1_U1/tmp_product__0/CLK">
+      <CELL NAME="mul_32s_32s_48_2_1_U1/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+      <CELL NAME="mul_32s_32s_48_2_1_U1/buff0_reg__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.261" DATAPATH_LOGIC_DELAY="4.206" DATAPATH_NET_DELAY="0.055" ENDPOINT_PIN="mul_32s_32s_48_2_1_U1/buff0_reg__0/PCIN[11]" LOGIC_LEVELS="0" MAX_FANOUT="1" SLACK="4.255" STARTPOINT_PIN="mul_32s_32s_48_2_1_U1/tmp_product__0/CLK">
+      <CELL NAME="mul_32s_32s_48_2_1_U1/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+      <CELL NAME="mul_32s_32s_48_2_1_U1/buff0_reg__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.261" DATAPATH_LOGIC_DELAY="4.206" DATAPATH_NET_DELAY="0.055" ENDPOINT_PIN="mul_32s_32s_48_2_1_U1/buff0_reg__0/PCIN[12]" LOGIC_LEVELS="0" MAX_FANOUT="1" SLACK="4.255" STARTPOINT_PIN="mul_32s_32s_48_2_1_U1/tmp_product__0/CLK">
+      <CELL NAME="mul_32s_32s_48_2_1_U1/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+      <CELL NAME="mul_32s_32s_48_2_1_U1/buff0_reg__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="4.261" DATAPATH_LOGIC_DELAY="4.206" DATAPATH_NET_DELAY="0.055" ENDPOINT_PIN="mul_32s_32s_48_2_1_U1/buff0_reg__0/PCIN[13]" LOGIC_LEVELS="0" MAX_FANOUT="1" SLACK="4.255" STARTPOINT_PIN="mul_32s_32s_48_2_1_U1/tmp_product__0/CLK">
+      <CELL NAME="mul_32s_32s_48_2_1_U1/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+      <CELL NAME="mul_32s_32s_48_2_1_U1/buff0_reg__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/solveCooling_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/solveCooling_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/solveCooling_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/solveCooling_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/solveCooling_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/solveCooling_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Mon Feb 26 21:37:44 IST 2024"/>
+    <item NAME="Version" VALUE="2023.2 (Build 4101106 on Feb  9 2024)"/>
+    <item NAME="Project" VALUE="hls_component"/>
+    <item NAME="Solution" VALUE="hls (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="artix7"/>
+    <item NAME="Target device" VALUE="xc7a200t-sbv484-1"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="10 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

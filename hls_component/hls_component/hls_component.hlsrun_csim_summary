@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls_component.hlsrun_csim_summary",
+ "thisFile": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/hls_component.hlsrun_csim_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,34 +9,34 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Mon Feb  5 14:06:03 2024",
- "timestampMillis": "1707122163703",
+ "dateTimestamp": "Mon Feb 26 21:02:44 2024",
+ "timestampMillis": "1708961564692",
  "buildStep": {
-  "cmdId": "c9373daa-c115-4768-aa46-1d6e1aeadb8a",
+  "cmdId": "c0d6ecac-d457-42df-ba51-ada4918e2400",
   "name": "vitis-run",
-  "logFile": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/logs/hls_component.steps.log",
-  "commandLine": "/home/netherquark/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg --work_dir hls_component ",
+  "logFile": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/logs/hls_component.steps.log",
+  "commandLine": "/home/soham/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/soham/Downloads/newton_law_of_cooling/hls_component/hls_config.cfg --work_dir hls_component ",
   "args": [
    "--mode",
    "hls",
    "--csim",
    "--config",
-   "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg",
+   "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_config.cfg",
    "--work_dir",
    "hls_component"
   ],
   "iniFiles": [],
-  "cwd": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component"
+  "cwd": "/home/soham/Downloads/newton_law_of_cooling/hls_component"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Feb  5 14:06:03 2024",
- "timestampMillis": "1707122163703",
+ "dateTimestamp": "Mon Feb 26 21:02:44 2024",
+ "timestampMillis": "1708961564692",
  "status": {
-  "cmdId": "c9373daa-c115-4768-aa46-1d6e1aeadb8a",
+  "cmdId": "c0d6ecac-d457-42df-ba51-ada4918e2400",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Mon Feb  5 14:06:05 2024",
- "timestampMillis": "1707122165745",
+ "dateTimestamp": "Mon Feb 26 21:02:46 2024",
+ "timestampMillis": "1708961566682",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -64,8 +64,8 @@
      "uuid": ""
     },
     "sources": [
-     "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/newton_hls.cpp",
-     "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/newton_hls_top.cpp"
+     "/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp",
+     "/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls_top.cpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -81,26 +81,26 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Mon Feb  5 14:06:05 2024",
- "timestampMillis": "1707122165745",
+ "dateTimestamp": "Mon Feb 26 21:02:46 2024",
+ "timestampMillis": "1708961566684",
  "buildStep": {
-  "cmdId": "e19bedbd-1c76-4487-b486-54476e5ca3dd",
+  "cmdId": "15006898-9e54-4e23-bec4-3dfd1afb981f",
   "name": "csim_design",
-  "logFile": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_component/hls/hls.log",
+  "logFile": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/hls/hls.log",
   "commandLine": "csim_design",
   "args": [],
   "iniFiles": [],
-  "cwd": "/home/netherquark/attempt2/newton_law_of_cooling/hls_component"
+  "cwd": "/home/soham/Downloads/newton_law_of_cooling/hls_component"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Feb  5 14:06:05 2024",
- "timestampMillis": "1707122165746",
+ "dateTimestamp": "Mon Feb 26 21:02:46 2024",
+ "timestampMillis": "1708961566684",
  "status": {
-  "cmdId": "e19bedbd-1c76-4487-b486-54476e5ca3dd",
+  "cmdId": "15006898-9e54-4e23-bec4-3dfd1afb981f",
   "state": "CS_RUNNING"
  }
 }
@@ -108,10 +108,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Feb  5 14:06:10 2024",
- "timestampMillis": "1707122170329",
+ "dateTimestamp": "Mon Feb 26 21:02:50 2024",
+ "timestampMillis": "1708961570211",
  "status": {
-  "cmdId": "e19bedbd-1c76-4487-b486-54476e5ca3dd",
+  "cmdId": "15006898-9e54-4e23-bec4-3dfd1afb981f",
   "state": "CS_PASSED"
  }
 }
@@ -119,10 +119,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Feb  5 14:06:10 2024",
- "timestampMillis": "1707122170372",
+ "dateTimestamp": "Mon Feb 26 21:02:50 2024",
+ "timestampMillis": "1708961570294",
  "status": {
-  "cmdId": "c9373daa-c115-4768-aa46-1d6e1aeadb8a",
+  "cmdId": "c0d6ecac-d457-42df-ba51-ada4918e2400",
   "state": "CS_PASSED"
  }
 }
@@ -130,8 +130,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Feb  5 14:06:10 2024",
- "timestampMillis": "1707122170372",
+ "dateTimestamp": "Mon Feb 26 21:02:50 2024",
+ "timestampMillis": "1708961570295",
  "report": {
   "path": "",
   "name": "",
@@ -144,8 +144,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Feb  5 14:06:10 2024",
- "timestampMillis": "1707122170373",
+ "dateTimestamp": "Mon Feb 26 21:02:50 2024",
+ "timestampMillis": "1708961570295",
  "report": {
   "path": "",
   "name": "",

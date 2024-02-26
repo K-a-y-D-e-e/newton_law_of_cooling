@@ -1,0 +1,9 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="solveCooling" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=solveCooling" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp:9:0" msg_body="Inlining function 'coolingDerivative(ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)' into 'solveCooling(ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)'">
+        <args Callee="coolingDerivative(ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)" Callee-DebugLoc="File /home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp Line 4 Column 0" Caller="solveCooling(ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt;&amp;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;, ap_fixed&lt;32, 16, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const&amp;)" Caller-DebugLoc="File /home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp Line 9 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

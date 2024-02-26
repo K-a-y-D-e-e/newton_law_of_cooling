@@ -1,0 +1,89 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2023.2.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>5.745</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>5.745</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>5.745</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>4.255</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>4.255</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>4.255</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>4.255</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>0</BRAM>
+    <CLB>0</CLB>
+    <DSP>8</DSP>
+    <FF>173</FF>
+    <LATCH>0</LATCH>
+    <LUT>176</LUT>
+    <SRL>0</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>730</BRAM>
+    <CLB>0</CLB>
+    <DSP>740</DSP>
+    <FF>269200</FF>
+    <LUT>134600</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="solveCooling" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="2">mul_32s_32s_48_2_1_U1 mul_33s_32s_48_2_1_U2</SubModules>
+    <Resources DSP="8" FF="173" LUT="176" LogicLUT="176"/>
+    <LocalResources FF="120" LUT="35" LogicLUT="35"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_32s_32s_48_2_1_U1" BINDMODULE="solveCooling_mul_32s_32s_48_2_1" DEPTH="1" FILE_NAME="solveCooling.v" ORIG_REF_NAME="solveCooling_mul_32s_32s_48_2_1">
+    <Resources DSP="4" FF="19" LUT="78" LogicLUT="78"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mul_33s_32s_48_2_1_U2" BINDMODULE="solveCooling_mul_33s_32s_48_2_1" DEPTH="1" FILE_NAME="solveCooling.v" ORIG_REF_NAME="solveCooling_mul_33s_32s_48_2_1">
+    <Resources DSP="4" FF="34" LUT="63" LogicLUT="63"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="4.261" DATAPATH_LOGIC_DELAY="4.206" DATAPATH_NET_DELAY="0.055" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/buff0_reg__0/PCIN[0]" LOGIC_LEVELS="0" MAX_FANOUT="1" SLACK="4.255" STARTPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/tmp_product__0/CLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/buff0_reg__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.261" DATAPATH_LOGIC_DELAY="4.206" DATAPATH_NET_DELAY="0.055" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/buff0_reg__0/PCIN[10]" LOGIC_LEVELS="0" MAX_FANOUT="1" SLACK="4.255" STARTPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/tmp_product__0/CLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/buff0_reg__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.261" DATAPATH_LOGIC_DELAY="4.206" DATAPATH_NET_DELAY="0.055" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/buff0_reg__0/PCIN[11]" LOGIC_LEVELS="0" MAX_FANOUT="1" SLACK="4.255" STARTPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/tmp_product__0/CLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/buff0_reg__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.261" DATAPATH_LOGIC_DELAY="4.206" DATAPATH_NET_DELAY="0.055" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/buff0_reg__0/PCIN[12]" LOGIC_LEVELS="0" MAX_FANOUT="1" SLACK="4.255" STARTPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/tmp_product__0/CLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/buff0_reg__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="4.261" DATAPATH_LOGIC_DELAY="4.206" DATAPATH_NET_DELAY="0.055" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/buff0_reg__0/PCIN[13]" LOGIC_LEVELS="0" MAX_FANOUT="1" SLACK="4.255" STARTPOINT_PIN="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/tmp_product__0/CLK">
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/tmp_product__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/mul_32s_32s_48_2_1_U1/buff0_reg__0" PRIMITIVE_TYPE="MULT.dsp.DSP48E1" LINE_NUMBER="36"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/solveCooling_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/solveCooling_failfast_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/solveCooling_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/solveCooling_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/solveCooling_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/solveCooling_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

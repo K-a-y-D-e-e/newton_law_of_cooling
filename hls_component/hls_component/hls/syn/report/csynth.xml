@@ -1,0 +1,422 @@
+<profile>
+    <ReportVersion>
+        <Version>2023.2.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>artix7</ProductFamily>
+        <Part>xc7a200t-sbv484-1</Part>
+        <TopModelName>solveCooling</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.860</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>6</Best-caseLatency>
+            <Average-caseLatency>6</Average-caseLatency>
+            <Worst-caseLatency>6</Worst-caseLatency>
+            <Best-caseRealTimeLatency>60.000 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>60.000 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>60.000 ns</Worst-caseRealTimeLatency>
+            <Interval-min>7</Interval-min>
+            <Interval-max>7</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp:9</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <DSP>8</DSP>
+            <FF>534</FF>
+            <LUT>285</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>730</BRAM_18K>
+            <DSP>740</DSP>
+            <FF>269200</FF>
+            <LUT>134600</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>solveCooling</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>solveCooling</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>solveCooling</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>solveCooling</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>solveCooling</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>solveCooling</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>temperature_i</name>
+            <Object>temperature</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_ovld</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>temperature_o</name>
+            <Object>temperature</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_ovld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>temperature_o_ap_vld</name>
+            <Object>temperature</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_ovld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>mediumTemperature</name>
+            <Object>mediumTemperature</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>coolingConstant</name>
+            <Object>coolingConstant</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>timeStep</name>
+            <Object>timeStep</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>solveCooling</ModuleName>
+            <BindInstances>sub_ln5_fu_87_p2 mul_33s_32s_48_2_1_U2 sub_ln5_1_fu_102_p2 mul_32s_32s_48_2_1_U1 add_ln14_fu_133_p2</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>solveCooling</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.860</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>6</Best-caseLatency>
+                    <Average-caseLatency>6</Average-caseLatency>
+                    <Worst-caseLatency>6</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>60.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>60.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>60.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>7</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp:9</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>8</DSP>
+                    <AVAIL_DSP>740</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>534</FF>
+                    <AVAIL_FF>269200</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>285</LUT>
+                    <AVAIL_LUT>134600</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>730</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln5_fu_87_p2" SOURCE="/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp:5" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_33s_32s_48_2_1_U2" SOURCE="/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp:5" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln5_1_fu_102_p2" SOURCE="/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp:5" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln5_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_48_2_1_U1" SOURCE="/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp:14" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_ln14"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln14_fu_133_p2" SOURCE="/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp:14" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln14"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_export vivado_clock="100MHz" vivado_optimization_level="3" vivado_phys_opt="all"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="temperature" index="0" direction="inout" srcType="ap_fixed&lt;32, 16, AP_TRN, AP_WRAP, 0&gt;&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="temperature_i" name="temperature_i" usage="data" direction="in"/>
+                <hwRef type="port" interface="temperature_o" name="temperature_o" usage="data" direction="out"/>
+                <hwRef type="port" interface="temperature_o_ap_vld" name="temperature_o_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="mediumTemperature" index="1" direction="in" srcType="ap_fixed&lt;32, 16, AP_TRN, AP_WRAP, 0&gt; const &amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="mediumTemperature" name="mediumTemperature" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="coolingConstant" index="2" direction="in" srcType="ap_fixed&lt;32, 16, AP_TRN, AP_WRAP, 0&gt; const &amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="coolingConstant" name="coolingConstant" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="timeStep" index="3" direction="in" srcType="ap_fixed&lt;32, 16, AP_TRN, AP_WRAP, 0&gt; const &amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="timeStep" name="timeStep" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="temperature_i" type="data" busTypeName="data" protocol="ap_ovld" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="temperature_i">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>temperature_i</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="temperature"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="temperature_o" type="data" busTypeName="data" protocol="ap_ovld" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="temperature_o">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>temperature_o</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="temperature"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="mediumTemperature" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="mediumTemperature">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>mediumTemperature</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="mediumTemperature"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="coolingConstant" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="coolingConstant">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>coolingConstant</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="coolingConstant"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="timeStep" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="timeStep">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>timeStep</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="timeStep"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="coolingConstant">ap_none, in, 32</column>
+                    <column name="mediumTemperature">ap_none, in, 32</column>
+                    <column name="temperature_i">ap_ovld, in, 32</column>
+                    <column name="temperature_o">ap_ovld, out, 32</column>
+                    <column name="timeStep">ap_none, in, 32</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="temperature">inout, ap_fixed&lt;32 16 AP_TRN AP_WRAP 0&gt;&amp;</column>
+                    <column name="mediumTemperature">in, ap_fixed&lt;32 16 AP_TRN AP_WRAP 0&gt; const &amp;</column>
+                    <column name="coolingConstant">in, ap_fixed&lt;32 16 AP_TRN AP_WRAP 0&gt; const &amp;</column>
+                    <column name="timeStep">in, ap_fixed&lt;32 16 AP_TRN AP_WRAP 0&gt; const &amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="temperature">temperature_i, port</column>
+                    <column name="temperature">temperature_o, port</column>
+                    <column name="temperature">temperature_o_ap_vld, port</column>
+                    <column name="mediumTemperature">mediumTemperature, port</column>
+                    <column name="coolingConstant">coolingConstant, port</column>
+                    <column name="timeStep">timeStep, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport/>
+</profile>
+

@@ -1,55 +1,40 @@
-# Ignore build output directory
-/build
+# gitignore template for Xilinx Vivado Design Suite
+# website: https://www.xilinx.com/support/download.html
 
-
-# Ignore object files and dependent files
-*.o
-*.d
-*.log
-*.rpt
-*.bd
-*.hwdef
-*.xdc
-*.bxml
-*.bda
-*.wpc
-*.wdf
-*.vhdl
-*.xml
-*.tcl
-*.zip
-*.png
+# [home]
 *.jou
-*.protoinst
-*.sh
-*.flow.log
-*.vhd
+*.log
+*.debug
+*.str
+*.zip
+*.tmp
+*.os
+*.js
+*.pb
 *.dcp
-*.hwh
+*.hwdef
+*.vds
+*.veo
+*.wdf
+*.vdi
+*.dmp
+*_stub.v
+*_stub.vhdl
+*_funcsim.v
+*_funcsim.vhdl
+.project
 
-#Ignore logs folder and log files
-/logs
+# [dir]
+*.cache
+.metadata
+*.data
+*.ipdefs
+.Xil
+*.sdk
+*.hw
+*.ip_user_files
 
-#Ignore lock files
-.lock
+.jobs
 
-.bin
-.pdi
-hls_component/hls_component/logs/
-hls_component/hls_component/hls/csim/build/
-hls_component/.cache/
-hls_component/hls_component/hls/csim/report/
-hls_component/hls_component/hls/syn/report/
-hls_component/hls_component/hls_component.hlscompile_summary
-hls_component/hls_component/hls_component.hlsrun_csim_summary
-hls_component/hls_component/hls/impl/misc/logo.png
-hls_component/hls_component/reports/
-hls_component/hls_component/hls/.debug/
-hls_component/hls_component/hash-map.txt
-hls_component/hls_component/hls/impl/verilog/project.runs/impl_1/
-hls_component/hls_component/hls/impl/verilog/project.runs/synth_1/
-hls_component/hls_component/hls/impl/verilog/project.sim/sim_1/
-hls_component/hls_component/hls/impl/verilog/report/
-hls_component/hls_component/hls/sim/report/
-hls_component/hls_component/hls/sim/
-hls_component/hls_component/hls/impl/verilog/project.runs/
+hw_handoff
+ipshared

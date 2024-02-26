@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/hls_component.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Feb 26 21:34:29 2024",
+ "timestampMillis": "1708963469118",
+ "buildStep": {
+  "cmdId": "955236ff-0b6d-4cbc-a106-88e7fa4aa60a",
+  "name": "v++",
+  "logFile": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/logs/hls_component.steps.log",
+  "commandLine": "/home/soham/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/soham/Downloads/newton_law_of_cooling/hls_component/hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_config.cfg",
+    "content": "part=xc7a200tsbv484-1\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\ntb.file=testbench.cpp\nsyn.file=newton_hls.cpp\nsyn.file=newton_hls_top.cpp\nsyn.top=solveCooling\nvivado.optimization_level=3\nclock=100MHz\nvivado.clock=100MHz\n"
+   }
+  ],
+  "cwd": "/home/soham/Downloads/newton_law_of_cooling/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Feb 26 21:34:29 2024",
+ "timestampMillis": "1708963469118",
+ "status": {
+  "cmdId": "955236ff-0b6d-4cbc-a106-88e7fa4aa60a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Feb 26 21:34:31 2024",
+ "timestampMillis": "1708963471135",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "solveCooling",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls.cpp",
+     "/home/soham/Downloads/newton_law_of_cooling/hls_component/newton_hls_top.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2023.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Feb 26 21:34:31 2024",
+ "timestampMillis": "1708963471136",
+ "buildStep": {
+  "cmdId": "2f08b2b6-bb94-48ae-af38-8e317655a1e1",
+  "name": "csynth_design",
+  "logFile": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/hls/hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/soham/Downloads/newton_law_of_cooling/hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Feb 26 21:34:31 2024",
+ "timestampMillis": "1708963471136",
+ "status": {
+  "cmdId": "2f08b2b6-bb94-48ae-af38-8e317655a1e1",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Feb 26 21:34:31 2024",
+ "timestampMillis": "1708963471136",
+ "report": {
+  "path": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Feb 26 21:34:31 2024",
+ "timestampMillis": "1708963471137",
+ "report": {
+  "path": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Feb 26 21:34:31 2024",
+ "timestampMillis": "1708963471137",
+ "report": {
+  "path": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Feb 26 21:34:43 2024",
+ "timestampMillis": "1708963483083",
+ "report": {
+  "path": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Feb 26 21:34:43 2024",
+ "timestampMillis": "1708963483084",
+ "report": {
+  "path": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Feb 26 21:34:43 2024",
+ "timestampMillis": "1708963483084",
+ "report": {
+  "path": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Feb 26 21:34:43 2024",
+ "timestampMillis": "1708963483084",
+ "status": {
+  "cmdId": "2f08b2b6-bb94-48ae-af38-8e317655a1e1",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Feb 26 21:34:43 2024",
+ "timestampMillis": "1708963483201",
+ "status": {
+  "cmdId": "955236ff-0b6d-4cbc-a106-88e7fa4aa60a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Feb 26 21:34:43 2024",
+ "timestampMillis": "1708963483268",
+ "report": {
+  "path": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/reports/v++_compile_hls_component_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Feb 26 21:34:43 2024",
+ "timestampMillis": "1708963483268",
+ "report": {
+  "path": "/home/soham/Downloads/newton_law_of_cooling/hls_component/hls_component/reports/.db/v++_compile_hls_component_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

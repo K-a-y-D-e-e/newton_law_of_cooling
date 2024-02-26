@@ -1,0 +1,100 @@
+
+
+================================================================
+== Synthesis Summary Report of 'solveCooling'
+================================================================
++ General Information: 
+    * Date:           Mon Feb 26 21:34:42 2024
+    * Version:        2023.2.2 (Build 4101106 on Feb  9 2024)
+    * Project:        hls_component
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a200t-sbv484-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+    |     Modules    | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |        |           |           |     |
+    |     & Loops    | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |     FF    |    LUT    | URAM|
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+    |+ solveCooling  |     -|  0.44|        6|  60.000|         -|        7|     -|        no|     -|  8 (1%)|  534 (~0%)|  285 (~0%)|    -|
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++-------------------+---------+-----------+----------+
+| Port              | Mode    | Direction | Bitwidth |
++-------------------+---------+-----------+----------+
+| coolingConstant   | ap_none | in        | 32       |
+| mediumTemperature | ap_none | in        | 32       |
+| temperature_i     | ap_ovld | in        | 32       |
+| temperature_o     | ap_ovld | out       | 32       |
+| timeStep          | ap_none | in        | 32       |
++-------------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------------+-----------+----------------------------------------------+
+| Argument          | Direction | Datatype                                     |
++-------------------+-----------+----------------------------------------------+
+| temperature       | inout     | ap_fixed<32, 16, AP_TRN, AP_WRAP, 0>&        |
+| mediumTemperature | in        | ap_fixed<32, 16, AP_TRN, AP_WRAP, 0> const & |
+| coolingConstant   | in        | ap_fixed<32, 16, AP_TRN, AP_WRAP, 0> const & |
+| timeStep          | in        | ap_fixed<32, 16, AP_TRN, AP_WRAP, 0> const & |
++-------------------+-----------+----------------------------------------------+
+
+* SW-to-HW Mapping
++-------------------+----------------------+---------+
+| Argument          | HW Interface         | HW Type |
++-------------------+----------------------+---------+
+| temperature       | temperature_i        | port    |
+| temperature       | temperature_o        | port    |
+| temperature       | temperature_o_ap_vld | port    |
+| mediumTemperature | mediumTemperature    | port    |
+| coolingConstant   | coolingConstant      | port    |
+| timeStep          | timeStep             | port    |
++-------------------+----------------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------+-----+--------+-----------+-----+--------+---------+
+| Name                    | DSP | Pragma | Variable  | Op  | Impl   | Latency |
++-------------------------+-----+--------+-----------+-----+--------+---------+
+| + solveCooling          | 8   |        |           |     |        |         |
+|   sub_ln5_fu_87_p2      |     |        | sub_ln5   | sub | fabric | 0       |
+|   mul_33s_32s_48_2_1_U2 | 4   |        | mul_ln5   | mul | auto   | 1       |
+|   sub_ln5_1_fu_102_p2   |     |        | sub_ln5_1 | sub | fabric | 0       |
+|   mul_32s_32s_48_2_1_U1 | 4   |        | mul_ln14  | mul | auto   | 1       |
+|   add_ln14_fu_133_p2    |     |        | add_ln14  | add | fabric | 0       |
++-------------------------+-----+--------+-----------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+

@@ -1,3 +1,3 @@
-relativeroot=/home/netherquark/attempt2/newton_law_of_cooling/hls_component
-original_argv=--mode hls --impl --config /home/netherquark/attempt2/newton_law_of_cooling/hls_component/hls_config.cfg --work_dir hls_component 
+relativeroot=/home/soham/Downloads/newton_law_of_cooling/hls_component
+original_argv=--mode hls --impl --config /home/soham/Downloads/newton_law_of_cooling/hls_component/hls_config.cfg --work_dir hls_component 
 
